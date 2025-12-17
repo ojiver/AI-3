@@ -1,6 +1,6 @@
 AI Projects｜利用神經網路輕鬆建立 Fashion MNIST 圖像辨識深度學習模型
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/1.jpg?raw=true)
 
 Fashion MNIST Random samples by Zihou Ng
 這個專案將引導初學者透過使用 TensorFlow 框架，對 Fashion MNIST 數據集進行圖像識別的深度學習模型的設計、開發和評估，並且可以試著將模型下載分享與視覺化模型架構。從基礎理論到實務操作，本專案旨在為初學者逐步了解深度學習的過程，並且帶領讀者從數據預處理到模型訓練和評估，進而掌握如何在實際情境中應用深度學習模型。
@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt </br>
 顯示第一個訓練圖像</br>
 plt.imshow(training_images[0]) </br>
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/2.jpg?raw=true)
 
 列印訓練標籤及圖像</br>
 print(training_labels[0]) # 列印第一個訓練標籤
@@ -35,11 +35,11 @@ print(training_labels[0]) # 列印第一個訓練標籤
 
 輸出類別 9 即為 Ankle boot，其他類別可參考下表。
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/3.jpeg?raw=true)
 
 print(training_images[0]) # 列印第一個訓練圖像的像素數據</br>
 
-![image]()<hr>
+![image](https://github.com/ojiver/AI-3/blob/main/4.jpg?raw=true)<hr>
 
 Step 3. 數據正規化</br>
 數據正規化：將圖像數據的像素值縮放到 0 到 1 之間，可以幫助模型更快更好地學習。</br>
@@ -72,7 +72,7 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print(f"Test loss: {test_loss}")
 print(f"Test accuracy: {test_acc}")
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/5.jpg?raw=true)
 
 測試損失表示模型在測試數據上的平均損失值，測試準確率則表示模型正確預測標籤的比例。
 
@@ -83,7 +83,7 @@ print(f"Test accuracy: {test_acc}")
 檢視模型架構：若想要顯示模型的摘要資訊，可執行下面程式碼，將會顯示包括每層的名稱、輸出形狀和參數數量，對於理解模型的構造和複雜度非常有幫助。
 model.summary()
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/6.jpg?raw=true)
 
 Model: “sequential”：表示我們所建立的模型是一個序列性模型（Sequential），這是最簡單的 Keras 模型類型，每一層就像是樂高積木一樣按順序一個接一個。</br>
 Layer (type)：顯示每層的類型，如 Flatten、Dense 等。</br>
@@ -100,7 +100,7 @@ Trainable params：顯示可訓練的參數數量，這裡與總參數數量相�
 Non-trainable params：顯示不可訓練的參數數量，在這個模型中沒有不可訓練的參數。</br>
 model.summary() 這個命令對於確認模型結構和調校非常有用，可以讓我們直觀地看到模型各層配置以及它們是如何連接的。而另一種方法則是將這個神經網路架構視覺化如下，也提供讀者參考。</br>
 
-![image]()
+![image](https://github.com/ojiver/AI-3/blob/main/7.jpg?raw=true)
 
 3. 心得與結論 </br>
 透過這個專案，初學者不僅能夠學習深度學習的理論知識，還能夠獲得實際操作經驗，對於理解和掌握深度學習的概念很重要。無論是從數據處理、建構模型架構到模型訓練及評估，每一步都是了解深度學習流程的重要組成部分。
